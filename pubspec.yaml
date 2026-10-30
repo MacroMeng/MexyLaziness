@@ -1,0 +1,32 @@
+name: mexy_laziness
+description: "Yet Another ToDo App"
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.13.5
+
+dependencies:
+  flutter:
+    sdk: flutter
+  m3e_core: ^1.1.5
+  material_3_expressive: ^1.2.0
+  material_ui: ^1.8.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^6.0.0
+
+flutter:
+  uses-material-design: true
+
+fonts:
+  - family: Google Sans Flex
+    fonts:
+      - asset: fonts/GoogleSansFlex.ttf
+  - family: MiSans
+    fonts:
+      - asset: fonts/MiSans VF.ttf
