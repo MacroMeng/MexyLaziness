@@ -11,10 +11,11 @@ pluginManagement {
     includeBuild("$flutterSdkPath/packages/flutter_tools/gradle")
 
     repositories {
+        // 阿里云镜像优先，官方仓库作为兜底
+        maven { url = uri("https://maven.aliyun.com/repository/public") }
+        maven { url = uri("https://maven.aliyun.com/repository/google") }
+        maven { url = uri("https://maven.aliyun.com/repository/gradle-plugin") }
         google()
-//        mavenLocal()
-//        maven { name "Alibaba" ; url "https://maven.aliyun.com/repository/public" }
-//        maven { name "Bstek" ; url "https://nexus.bsdn.org/content/groups/public/" }
         mavenCentral()
         gradlePluginPortal()
     }
@@ -30,7 +31,7 @@ pluginManagement {
 plugins {
     id("dev.flutter.flutter-plugin-loader") version "1.0.0"
     id("com.android.application") version "9.1.0" apply false
-    id("org.jetbrains.kotlin.android") version "2.4.0" apply false
+    id("org.jetbrains.kotlin.android") version "2.4.21" apply false
 }
 
 include(":app")

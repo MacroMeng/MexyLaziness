@@ -23,10 +23,10 @@ dev_dependencies:
 flutter:
   uses-material-design: true
 
-fonts:
-  - family: Google Sans Flex
-    fonts:
-      - asset: fonts/GoogleSansFlex.ttf
-  - family: MiSans
-    fonts:
-      - asset: fonts/MiSans VF.ttf
+  fonts:
+    - family: Google Sans Flex
+      fonts:
+        - asset: fonts/GoogleSansFlex.ttf
+    - family: MiSans
+      fonts:
+        - asset: fonts/MiSans VF.ttf
