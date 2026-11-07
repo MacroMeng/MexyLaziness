@@ -1,4 +1,5 @@
 import 'package:material_ui/material_ui.dart';
+import 'package:mexy_laziness/features/widgets.dart';
 
 /// 碎片页。
 ///
@@ -8,6 +9,8 @@ class FragmentsPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Center(child: Text('碎片'));
+    return const Center(
+      child: WIPIndicator(),
+    );
   }
 }
